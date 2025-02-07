@@ -36,7 +36,7 @@ export default authorizer({
 | ------------------------ | -------------- | --------------------------------------------------------- |
 | `idpCert`                | `string`       | X.509 certificate (in string format)                      |
 | `idpIssuer`              | `string`       | Identity Provider issuer URL                              |
-| `idpSignonUrl`           | `string?`      | Identity Provider sign-on URL                             |
+| `idpSignonUrl`           | `string`       | Identity Provider sign-on URL                             |
 
 ## License
 
