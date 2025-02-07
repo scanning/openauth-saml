@@ -1,0 +1,36 @@
+{
+  "name": "@scanning/openauth-saml",
+  "version": "0.0.1",
+  "module": "src/index.ts",
+  "type": "module",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/scanning/openauth-saml",
+  "scripts": {
+    "build": "bun run script/build.ts",
+    "release": "bun run build && changeset publish"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.11",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@openauthjs/openauth": "^0.3.5",
+    "@node-saml/node-saml": "^5.0.0"
+  }
+}
